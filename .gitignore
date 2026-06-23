@@ -1,0 +1,106 @@
+# Grants
+/grants/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions (compiled CUDA / C++ modules)
+*.so
+*.o
+*.obj
+*.dll
+*.dylib
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+.eggs/
+*.whl
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+*.cover
+*.prof
+
+# Virtual environments
+venv/
+.venv/
+env/
+env.bak/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+*.log
+
+# Benchmarks
+benchmarks/results.json
+
+# Compiled kernels cache
+kernels/
+.crush/
+
+# PyTorch
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Weights & Biases / experiment tracking
+wandb/
+mlruns/
+
+# Archives
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+
+# Mypy / type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+*.mypy_cache/
+
+# Ruff / linters
+.ruff_cache/
+
+# Docker
+.docker/

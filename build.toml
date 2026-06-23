@@ -1,0 +1,36 @@
+[general]
+name = "murmurative-attention"
+version = 1
+license = "Apache-2.0"
+backends = ["cuda"]
+
+[general.hub]
+repo-id = "jdbohrman/murmurative-attention"
+
+[torch]
+src = [
+    "torch-ext/torch_binding.cpp",
+    "torch-ext/torch_binding.h",
+    "torch-ext/wrappers.cpp",
+    "torch-ext/cuda_ops.h",
+]
+
+[kernel.slot_attend]
+backend = "cuda"
+depends = ["torch"]
+src = ["src/murmurative/csrc/cuda/slot_attend.cu"]
+
+[kernel.slot_select]
+backend = "cuda"
+depends = ["torch"]
+src = ["src/murmurative/csrc/cuda/slot_select.cu"]
+
+[kernel.slot_update]
+backend = "cuda"
+depends = ["torch"]
+src = ["src/murmurative/csrc/cuda/slot_update.cu"]
+
+[kernel.slot_diffusion]
+backend = "cuda"
+depends = ["torch"]
+src = ["src/murmurative/csrc/cuda/slot_diffusion.cu"]
